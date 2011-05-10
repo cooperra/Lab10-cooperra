@@ -16,7 +16,7 @@ module NavigationHelpers
     when /fortunes/i
       '/fortune/random/'
 
-    when /fortune ^(d+)/i
+    when /fortune (\d+)/i
       "/fortune/get/$1/"
 
     # Add more mappings here.
