@@ -8,6 +8,11 @@ class Fortune < Sinatra::Base
     haml :fortune
   end
 
+  get '/fortune/get/:fid/?' do
+    @fortune = $fortunes[params[:fid].to_i]
+    haml :fortune
+  end
+
   require 'fortunedata'
 
 end
