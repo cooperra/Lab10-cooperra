@@ -6,5 +6,7 @@ Feature: Specific fortune
 Scenario: Get a fortune
 	  Given I am on fortune 6
 	  Then I should see the fortune "Plan for many pleasures ahead."
+	  Given I am on fortune 10
+	  Then I should see the fortune "Something you lost will soon turn up."
 
 
